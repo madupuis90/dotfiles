@@ -17,6 +17,14 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+# Path
+export PATH=$PATH:/usr/local/go/bin 
+export PATH=$PATH:$GOPATH/bin
+
+# Aliases
+alias ls="ls --color=auto"
+alias ll="ls -la"
+
 # Use modern completion system
 autoload -Uz compinit
 compinit
